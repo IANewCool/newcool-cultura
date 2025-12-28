@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cultura - NewCooltura Informada",
+  title: "Cultura Chile | NewCooltura Informada",
   description: "Centros culturales, museos, bibliotecas, fondos concursables y patrimonio en Chile",
+  keywords: ["cultura Chile", "museos", "bibliotecas", "fondos concursables", "patrimonio cultural"],
+  openGraph: {
+    title: "Cultura Chile - NewCooltura Informada",
+    description: "Museos, bibliotecas y fondos culturales",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
